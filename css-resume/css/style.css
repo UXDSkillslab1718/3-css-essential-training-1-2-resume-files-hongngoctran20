@@ -8,7 +8,17 @@
 /* Global styles
 -----------------------*/
 body {
-
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2 {
+	font-family: 'Caveat Brush', cursive;
+	font-weight: 400;
+}
+h1 {
+	font-size: 80px;
+}
+h2 {
+	font-size: 48px;
 }
 a {
 	color: #EF233C;
