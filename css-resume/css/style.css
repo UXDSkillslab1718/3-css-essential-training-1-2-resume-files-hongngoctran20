@@ -7,8 +7,16 @@
 
 /* Global styles
 -----------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	margin :0;
 }
 h1, h2 {
 	font-family: 'Caveat Brush', cursive;
@@ -18,7 +26,8 @@ h1 {
 	font-size: 80px;
 }
 h2 {
-	font-size: 48px;
+	font-size: 40px;
+	margin-top: 0;
 }
 a {
 	color: #EF233C;
@@ -26,14 +35,47 @@ a {
 a:hover {
 	text-decoration: none;
 }
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+}
+.col-narrow {
+	width: 35%;
+	float: left;
+	padding-right: 20px;
+	min-height: 175px;
+}
+.col-wide {
+	width:65%;
+	float: left;
+	padding-left: 40px;
+	min-height: 175px;
+}
+
 /* Header and footer styles
 -----------------------*/
 header, footer {
 	background: #2B2D42;
 	color: #8D99AE;
 }
+/*header*/
+.profile-img {
+	border-radius: 50%;
+}
+
 header h1, header h2 {
 	color: #EDF2F4;
+	margin: 0;
+}
+
+/*footer*/
+footer {
+	text-align: center;
+}
+.contact-info a {
+	display: inline-block;
 }
 
 /* Work Experience
