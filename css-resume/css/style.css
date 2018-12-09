@@ -45,17 +45,7 @@ a:hover {
 	max-width: 950px;
 	margin: 0 auto;
 	padding: 60px 50px;
-	overflow: auto;
-}
-.col-narrow {
-	width: 35%;
-	float: left;
-	padding-right: 20px;
-}
-.col-wide {
-	width:65%;
-	float: left;
-	padding-left: 40px;
+	overflow: hidden;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -118,7 +108,7 @@ nav {
 }
 nav a {
 	display: inline-block;
-	padding: 15px 75px;
+	padding: 15px 30px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -154,11 +144,29 @@ p + h3 {
 }
 
 
+/* Media Queries
+-----------------------*/
 
+@media (min-width: 1010px) {
+	.col-narrow {
+		width: 30%;
+		float: left;
+	}
+	.col-wide {
+		width:70%;
+		float: left;
+		padding-left: 40px;
+	}
+}
 
-
-
-
+@media (max-width: 1009px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {
+		width: 250px;
+	}
+}
 
 
 
