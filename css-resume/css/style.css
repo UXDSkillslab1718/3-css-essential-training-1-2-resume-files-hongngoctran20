@@ -3,6 +3,9 @@
 #8D99AE - light blue
 #EDF2F4 - blue/white
 #EF233C - red
+#FFC99B - peach orange
+#FFF8DB - cornsilk
+#B8EDD3 - magic mint
 */
 
 /* Global styles
@@ -29,8 +32,11 @@ h2 {
 	font-size: 40px;
 	margin-top: 0;
 }
+h3 {
+	margin: 0;
+}
 a {
-	color: #EF233C;
+	color: #000000;
 }
 a:hover {
 	text-decoration: none;
@@ -45,20 +51,21 @@ a:hover {
 	width: 35%;
 	float: left;
 	padding-right: 20px;
-	min-height: 175px;
 }
 .col-wide {
 	width:65%;
 	float: left;
 	padding-left: 40px;
-	min-height: 175px;
+}
+.uppercase {
+	text-transform: uppercase;
 }
 
 /* Header and footer styles
 -----------------------*/
 header, footer {
-	background: #2B2D42;
-	color: #8D99AE;
+	background: #FFC99B;
+	color: #333333;
 }
 /*header*/
 .profile-img {
@@ -66,7 +73,7 @@ header, footer {
 }
 
 header h1, header h2 {
-	color: #EDF2F4;
+	color: #333333;
 	margin: 0;
 }
 
@@ -84,12 +91,24 @@ footer {
 	background: #EDF2F4;
 }
 
+h3 ~ p {
+	margin: 0;
+}
+.job-description {
+	margin-bottom: 30px;
+}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+
 /* Education
 -----------------------*/
 .education {
-	background: #8D99AE;
+	background: #FFA686;
 }
-
+p + h3 {
+	margin-top:30px;
+}
 
 
 
