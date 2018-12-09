@@ -44,8 +44,8 @@ a:hover {
 .content-wrap {
 	max-width: 950px;
 	margin: 0 auto;
-	padding: 50px;
-	overflow: auto;
+	padding: 60px 50px;
+	overflow: hidden;
 }
 .col-narrow {
 	width: 35%;
@@ -60,7 +60,13 @@ a:hover {
 .uppercase {
 	text-transform: uppercase;
 }
-
+.btn {
+	text-decoration: none;
+	background: #B8EDD3;
+	color: black;
+	padding: 10px;
+	display: inline-block;
+}
 /* Header and footer styles
 -----------------------*/
 header, footer {
@@ -71,11 +77,21 @@ header, footer {
 .profile-img {
 	border-radius: 50%;
 }
+header {
+	padding-top: 30px;
+	position: relative;
+}
 
 header h1, header h2 {
 	color: #333333;
 	margin: 0;
 }
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
 
 /*footer*/
 footer {
@@ -83,6 +99,23 @@ footer {
 }
 .contact-info a {
 	display: inline-block;
+}
+
+
+/*Navigation*/
+nav {
+	text-align: center;
+	background: #FFF8DB;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 75px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 /* Work Experience
